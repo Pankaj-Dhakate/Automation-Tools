@@ -1,0 +1,47 @@
+
+<GUJGGSN01>ping -vpn-instance VPN_S1U -s 1500 -a 10.40.27.1 10.95.92.82
+  PING 10.95.92.82: 1500  data bytes, press CTRL_C to break
+    Reply from 10.95.92.82: bytes=1500 Sequence=1 ttl=250 time=9 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=2 ttl=250 time=4 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=3 ttl=250 time=4 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=4 ttl=250 time=10 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=5 ttl=250 time=10 ms
+
+  --- 10.95.92.82 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/7/10 ms
+    
+    ===========================================
+    
+    <GUJGGSN02>ping -vpn-instance VPN_S1U -s 1500 -a 10.0.242.49 10.95.92.82
+  PING 10.95.92.82: 1500  data bytes, press CTRL_C to break
+    Reply from 10.95.92.82: bytes=1500 Sequence=1 ttl=250 time=9 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=2 ttl=250 time=4 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=3 ttl=250 time=4 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=4 ttl=250 time=4 ms
+    Reply from 10.95.92.82: bytes=1500 Sequence=5 ttl=250 time=4 ms
+
+  --- 10.95.92.82 ping statistics ---
+    5 packet(s) transmitted
+    5 packet(s) received
+    0.00% packet loss
+    round-trip min/avg/max = 4/5/9 ms
+    
+    
+    ====================================
+    
+    Monday February 04 13:52:52 IST 2019
+[GnS5S8]MUM-CIS-CHD-SPG-01# ping 10.95.92.82 src 10.206.244.5
+Monday February 04 13:53:18 IST 2019
+PING 10.95.92.82 (10.95.92.82) from 10.206.244.5 : 56(84) bytes of data.
+64 bytes from 10.95.92.82: icmp_seq=1 ttl=252 time=20.6 ms dscp=0 [BE]
+64 bytes from 10.95.92.82: icmp_seq=2 ttl=252 time=20.7 ms dscp=0 [BE]
+64 bytes from 10.95.92.82: icmp_seq=3 ttl=252 time=20.6 ms dscp=0 [BE]
+64 bytes from 10.95.92.82: icmp_seq=4 ttl=252 time=20.5 ms dscp=0 [BE]
+64 bytes from 10.95.92.82: icmp_seq=5 ttl=252 time=20.6 ms dscp=0 [BE]
+
+--- 10.95.92.82 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 20.599/20.655/20.724/0.100 ms
